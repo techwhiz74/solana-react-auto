@@ -13,7 +13,7 @@ const SendSOL = () => {
   const { sendTransaction, connected, wallet, connecting, connect } = useWallet();
   const [provider, setProvider] = useState(null);
 
-  /** Connect */
+  /** Connect with Wallet */
   const handleConnect = useCallback(async () => {
     if (!provider) return;
 
